@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Construction Service</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="src/output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+
+    <!-- Navbar -->
+     <header>
+     <nav class="w-full flex items-center justify-between p-4 shadow">
+      <div class="w-50 md:w-70">
+        <a href="index.html">
+          <img src="logos/Layer_1-300x86.png" alt="">
+        </a>
+      </div>
+
+      <ul class="hidden md:flex gap-8 text-[18px] font-medium">
+        <li class="hover:text-[#003366] hover:font-medium transition duration-300">
+          <a href="">About Us</a>
+        </li>
+
+        <li class="hover:text-[#003366] hover:font-medium transition duration-300">
+          <a href="">Services</a>
+        </li>
+
+        <li class="hover:text-[#003366] hover:font-medium transition duration-300">
+          <a href="">Contact Us</a>
+        </li>
+      </ul>
+
+      <div class="md:hidden">
+        <i class="fa-solid fa-bars" id="sidenavOpen" onclick="showSidenav()"></i>
+        <i class="fa-solid fa-xmark" id="sidenavClose" onclick="hideSidenav()"></i>
+      </div>
+     </nav>
+     </header>
+
+     <!-- SideNav -->
+      <aside class="sidenav bg-[#ff6600] w-full fixed top-18 left-0 shadow p-5 text-white font-medium text-[19px] z-50 md:hidden hidden">
+        <div class="p-4">
+          <ul>
+        <li>
+          <a href="">About Us</a>
+        </li>
+
+        <li class="my-8">
+          <a href="">Services</a>
+        </li>
+
+        <li>
+          <a href="">Contact Us</a>
+        </li>
+        </ul>
+        </div>
+      </aside>
+
+      <main>
+    <!-- Hero -->
+     <section class="bg-center bg-no-repeat bg-[url('')] bg-blend-multiply">
+      <div class="px-4 mx-auto max-w-7xl text-center py-24 lg:py-56">
+        <h1 class="mb-6 text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl">Building the Future , One Project at a Time</h1>
+        <p class="mb-8 text-base font-bold md:text-xl sm:px-16 lg:px-48">Reliable, efficient, and quality-driven construction services tailored to your needs.</p>
+        <p class="mb-8 text-base font-bold md:text-xl sm:px-16 lg:px-48">One‑Stop Construction & Fabrication Services</p>
+        
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 md:space-x-4">
+          <a href="">
+            <button class="bg-[#ff6600] inline-flex items-center justify-center text-white box-border border border-transparent shadow-xs font-medium rounded-lg text-base px-6 py-3 hover:bg-[#003366] hover:font-medium hover:text-[#ff6600] transition duration-300 cursor-pointer">View Our Work </button>
+          </a>
+
+          <a href="">
+            <button class="bg-[#003366] inline-flex items-center justify-center text-white box-border border border-transparent shadow-xs font-medium rounded-lg text-base px-6 py-3 hover:bg-[#ff6600] hover:font-medium hover:text-[#003366] transition duration-300 cursor-pointer">Get Free Quote</button>
+          </a>
+        </div>
+
+        <div class="mt-10 font-bold text-[27px] md:text-4xl">
+          <span id="counter">0</span> years experience
+        </div>
+      </div>
+     </section>
+
+    <!-- Services  -->
+    <section class="p-5">
+      <div>
+        <h2 class="text-[#003366] text-3xl font-bold">Services We Offer</h2>
+        <p class="text-[20px] text-[#666666] my-10">
+          Tailored Solutions for Industrial, Structural, and Construction Needs.
+          From heavy-duty installations to precision fabrication, we provide
+          end-to-end services that meet technical standards and exceed
+          expectations.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="bg-[#d9d9d9] rounded-t-md w-80">
+          <img
+            src="images/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg"
+            alt=""
+            class="rounded-t-md w-80 h-auto"
+          />
+          <div class="p-4">
+            <h3 class="my-4 text-[20px] font-medium text-[#666666]">
+              General Construction
+            </h3>
+            <p class="text-[17px] text-[#ababab]">
+              We execute construction projects with a focus on safety,
+              durability, and efficiency — from groundwork to finishing.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#d9d9d9] rounded-t-md w-80">
+          <img
+            src="images/michael-bader-eyq7H7gO0EY-unsplash.jpg"
+            alt=""
+            class="rounded-t-md w-80 h-auto"
+          />
+          <div class="p-4">
+            <h3 class="my-4 text-[20px] font-medium text-[#666666]">Structural Steel Fabrication & Erection</h3>
+            <p class="text-[17px] text-[#ababab]">
+              We fabricate and install structural steel components that meet
+              high-load demands and design specifications for industrial and
+              commercial builds.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#d9d9d9] rounded-t-md w-80">
+          <img
+            src="images/josh-beech-tXJhAFVOHVk-unsplash.jpg"
+            alt=""
+            class="rounded-t-md w-80 h-auto"
+          />
+          <div class="p-4">
+          <h3 class="my-4 text-[20px] font-medium text-[#666666]">Metal Fabrication & Welding</h3>
+          <p class="text-[17px] text-[#ababab]">
+            Breathe new life into existing spaces. We handle renovations with
+            precision, transforming outdated or underused areas into beautiful,
+            functional environments.
+          </p>
+          </div>
+        </div>
+
+        <div class="bg-[#d9d9d9] rounded-t-md w-80">
+          <img
+            src="images/smkn-1-gantar-nlXv_JCfSHc-unsplash.jpg"
+            alt=""
+            class="rounded-t-md w-80 h-auto"
+          />
+          <div class="p-4">
+          <h3 class="my-4 text-[20px] font-medium text-[#666666]">Project Management & Consulting</h3>
+          <p class="text-[17px] text-[#ababab]">
+            We provide expert oversight and technical guidance to keep your
+            project on track on time, on budget, and to spec.
+          </p>
+          </div>
+        </div>
+
+        <div class="bg-[#d9d9d9] rounded-t-md w-80">
+          <img
+            src="images/divaris-shirichena-CvlLDjpYGs0-unsplash.jpg"
+            alt=""
+            class="rounded-t-md w-80 h-auto"
+          />
+          <div class="p-4">
+          <h3 class="my-4 text-[20px] font-medium text-[#666666]">Custom Metal Work</h3>
+          <p class="text-[17px] text-[#ababab]">
+            We design and produce tailored metal solutions that combine function
+            and precision — built for unique applications.
+          </p>
+          </div>
+        </div>
+
+        <div class="bg-[#d9d9d9] rounded-t-md w-80">
+          <img
+            src="images/tecnic-bioprocess-solutions-xWUNZVW5JOg-unsplash.jpg"
+            alt=""
+            class="rounded-t-md w-80 h-auto"
+          />
+          <div class="p-4">
+          <h3 class="my-4 text-[20px] font-medium text-[#666666]">Equipment Installation & Maintenance</h3>
+          <p class="text-[17px] text-[#ababab]">
+            We handle the setup and upkeep of industrial equipment, ensuring
+            optimal performance, safety, and lifecycle efficiency.
+          </p>
+          </div>
+        </div>
+
+        <div class="bg-[#d9d9d9] rounded-t-md w-80">
+          <img
+            src="images/isawred-pCZsRKT-_Ns-unsplash.jpg"
+            alt=""
+            class="rounded-t-md w-80 h-auto"
+          />
+          <div class="p-4">
+          <h3 class="my-4 text-[20px] font-medium text-[#666666]">Industrial Piping & Plumbing</h3>
+          <p class="text-[17px] text-[#ababab]">
+            We install complex piping systems built to handle industrial-grade
+            flow, pressure, and compliance standards.
+          </p>
+          </div>
+        </div>
+
+        <div class="bg-[#d9d9d9] rounded-t-md w-80">
+          <img
+            src="images/emmanuel-ikwuegbu--0-kl1BjvFc-unsplash.jpg"
+            alt=""
+            class="rounded-t-md w-80 h-auto"
+          />
+          <div class="p-4">
+          <h3 class="my-4 text-[20px] font-medium text-[#666666]">Electrical & Mechanical Services</h3>
+          <p class="text-[17px] text-[#ababab]">
+            From wiring to HVAC systems, we provide reliable electromechanical
+            services for smooth facility operations.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <a href="">
+        <button class="bg-[#ff6600] px-6 py-3 text-white font-medium rounded-lg hover:bg-[#003366] cursor-pointer hover:text-[#ff6600] hover:font-medium">
+            Learn More
+        </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Our Work -->
+     <section class="p-5 mt-10">
+        <div class="text-center">
+            <h2 class="text-[#003366] text-3xl font-bold">See Our Work in Action</h2>
+            <p class="text-[20px] text-[#666666] my-10">From foundations to finishes here’s what we’ve built.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-5">
+            <div>
+                <img src="images/troy-mortier-eKY6_9W_iqY-unsplash.jpg" alt="" class="rounded-t-md w-80 h-auto">
+                <h3 class="my-4 text-[20px] font-medium text-[#666666]">GreenVolt Energy Park</h3>
+            </div>
+
+
+            <div>
+                <img src="images/michael-bader-eyq7H7gO0EY-unsplash.jpg" alt="" class="rounded-t-md w-80 h-auto">
+                <h3 class="my-4 text-[20px] font-medium text-[#666666]">Structural Steel Fabrication & Erection</h3>
+            </div>
+
+            <div>
+                <img src="images/josh-beech-tXJhAFVOHVk-unsplash.jpg" alt="" class="rounded-t-md w-80 h-auto">
+                <h3 class="my-4 text-[20px] font-medium text-[#666666]">Metal Fabrication & Welding</h3>
+            </div>
+        </div>
+
+        <div class="w-fit mx-auto mt-8">
+            <a href="">
+                <button class="bg-[#ff6600] px-6 py-3 text-white font-medium rounded-lg hover:bg-[#003366] cursor-pointer hover:text-[#ff6600] hover:font-medium">Work With Us</button>
+            </a>
+        </div>
+     </section>
+
+     <!-- Clients Reviews -->
+      <section class="p-4 mt-10">
+        <div class="grid md:grid-cols-2 my-15">
+            <div>
+                <h2 class="text-[#003366] text-3xl font-bold">Read the best review from our clients</h2>
+            </div>
+
+            <div>
+                <p class="text-[20px] text-[#666666]">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomized
+                </p>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="bg-[#deeeff] rounded-lg p-5 w-80 h-auto">
+                <p class="text-[17px] text-[#ababab] text-center mb-5">Exceptional workmanship and attention to detail. The team delivered a stunning result that exceeded our expectations. </p>
+
+                <div class="flex items-center justify-center space-x-2 mb-6 text-amber-300">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <img src="review_pics/zahir-namane-hwc7eIQiTCE-unsplash.jpg" alt="" class="w-12 h-12 rounded-full mx-auto">
+            </div>
+
+            <div class="bg-[#ccd6e0] rounded-lg p-5 w-80 h-auto">
+                <p class="text-[17px] text-[#ababab] text-center mb-5">Professional, efficient, and reliable. We couldn’t be happier with our new house.</p>
+
+                <div class="flex items-center justify-center space-x-2 mb-6 text-amber-300">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <img src="review_pics/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg" alt="" class="w-12 h-12 rounded-full mx-auto">
+            </div>
+
+            <div class="bg-[#deeeff] rounded-lg p-5 w-80 h-auto">
+                <p class="text-[17px] text-[#ababab] text-center mb-5">Highly recommended. The construction team was skilled , courteous and kept us informed throughout the project.</p>
+
+                <div class="flex items-center justify-center space-x-2 mb-6 text-amber-300">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <img src="review_pics/marilia-castelli-ysSCKfw2VeY-unsplash.jpg" alt="" class="w-12 h-12 rounded-full mx-auto">
+            </div>
+
+            <div class="bg-[#ccd6e0] rounded-lg p-5 w-80 h-auto">
+                <p class="text-[17px] text-[#ababab] text-center mb-5">Impressed with the equality of work and the teams’ ability to meet deadlines. Our new space is fantastic.</p>
+
+                <div class="flex items-center justify-center space-x-2 mb-6 text-amber-300">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <img src="review_pics/redd-francisco-v6771a4avV4-unsplash.jpg" alt="" class="w-12 h-12 rounded-full mx-auto">
+            </div>
+        </div>
+      </section>
+
+      <!-- What Sets Us Apart -->
+       <section class="p-4 mt-10 text-center">
+        <div>
+            <h2 class="text-[#003366] text-3xl font-bold">What Sets Us Apart</h2>
+            <p class="text-[20px] text-[#666666] mt-10 lg:w-200 lg:mx-auto">We’re more than a contractor—we’re a complete project partner. By housing all our capabilities under one roof, we eliminate delays, cut unnecessary costs, and maintain consistent quality from start to finish.</p>
+            <h3 class="text-[#666666] text-2xl font-semibold mt-10">Let’s Build Something Great Together</h3>
+            <div class="mt-8">
+                <a href="">
+                    <button class="bg-[#ff6600] px-6 py-3 text-white font-medium rounded-lg hover:bg-[#003366] cursor-pointer hover:text-[#ff6600] hover:font-medium">
+                        Contact Us
+                    </button>
+                </a>
+            </div>
+        </div>
+       </section>
+       </main>
+
+       <!-- Footer -->
+       <footer class="mt-10">
+        <section class="bg-[#deeeff] p-10">
+          <div class="grid md:grid-cols-2">
+            <div>
+              <img src="logos/Layer_1.webp" alt="">
+
+              <div class="flex items-center gap-5">
+                <i class="fa-solid fa-phone"></i>
+                <span>+234(0) 806 4831 859</span>
+
+                <div>
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>+234(0) 903 4691 468</span>
+              </div>
+              </div>
+
+              <div class="flex items-center gap-5">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="">Info@smoothsailconstruction.com</a>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75432.1461996814!2d3.334240924141263!3d6.469146634994179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2suk!4v1765572550436!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-md md:w-100 md:h-75 lg:w-150 lg:h-75"></iframe>
+              </div>
+
+              <div class="flex items-center gap-5 text-[18px] mt-6">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>D-244 Ikota Shopping Complex, V.G.C Lekki Lagos <span class="block">State Nigeria</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10">
+          <hr>
+          </div>
+
+          <div class="md:flex md:justify-between">
+            <div>
+              <p>© Smooth Sail Construction.</p>
+              <p>
+                Developed by
+                <a href="">Pere-ere</a>
+              </p>
+            </div>
+
+            <div>
+              <div>
+                <h2>Company</h2>
+
+                <ul>
+                  <li>
+                    <a href="">About</a>
+                  </li>
+
+                  <li>
+                    <a href="">Services</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <h2>Support</h2>
+
+                <ul>
+                  <li>
+                    <a href="">Contact Us</a>
+                  </li>
+
+                     <li>
+                    <a href="">FAQs</a>
+                  </li>
+
+                     <li>
+                    <a href="">Facebook</a>
+                  </li>
+
+                     <li>
+                    <a href="">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <h2>Newsletter</h2>
+              </div>
+
+              <div>
+                <input type="email" name="email" placeholder="Your Email Address Here..." class="bg-white px- py-3 w-full rounded-lg border border-gray-300">
+              </div>
+
+              <div>
+                <button type="submit" id="newsBtn">Submit</button>
+              </div>
+            </div>
+          </div>
+        </section>
+       </footer>
+
+       <!-- Back to the top Button -->
+    <div
+      id="backToTopBtn"
+      title="Go to top"
+      class="fixed bottom-5 right-6 z-50"
+    >
+      <button
+        class="bg-[#ff6600] p-3 rounded-full animate-pulse w-14 h-14 cursor-pointer"
+      >
+        <i class="fa-solid fa-arrow-up text-[#003366]"></i>
+      </button>
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
