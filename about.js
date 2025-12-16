@@ -1,5 +1,4 @@
 AOS.init();
-//  import { CountUp } from './js/countUp.min.js'; 
 
 const sidenavOpen = document.getElementById('sidenavOpen'); 
 const sidenavClose = document.getElementById('sidenavClose');
@@ -21,7 +20,7 @@ function hideSidenav(){
    sidenavOpen.style.display = 'block'; 
   sidenavClose.style.display = 'none';
   sidenav.style.display = 'none' 
-} 
+}  
 
 // Back to top button
 const mybutton = document.getElementById("backToTopBtn"); 
@@ -44,11 +43,3 @@ function topFunction() {
     behavior: 'smooth'
   });
 }
-
-
-// const counter = new CountUp('counter', 24); 
-// if (!counter.error) {
-//   counter.start(); 
-// } else {
-//   console.error(counter.error); 
-// } 
