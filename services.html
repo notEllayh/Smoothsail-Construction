@@ -4,6 +4,371 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>We bring ideas to life.</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="" />
+    <link
+      href="https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="w-full flex items-center justify-between p-4 shadow">
+        <div class="w-50 md:w-70">
+          <a href="index.html">
+            <img src="logos/Layer_1-300x86.png" alt="" />
+          </a>
+        </div>
+
+        <ul class="hidden md:flex gap-8 text-[18px] font-medium">
+          <li
+            class="hover:text-[#003366] hover:font-medium transition duration-300"
+          >
+            <a href="about.html">About Us</a>
+          </li>
+
+          <li
+            class="hover:text-[#003366] hover:font-medium transition duration-300"
+          >
+            <a href="services.html">Services</a>
+          </li>
+
+          <li
+            class="hover:text-[#003366] hover:font-medium transition duration-300"
+          >
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="md:hidden">
+          <i
+            class="fa-solid fa-bars"
+            id="sidenavOpen"
+            onclick="showSidenav()"
+          ></i>
+          <i
+            class="fa-solid fa-xmark"
+            id="sidenavClose"
+            onclick="hideSidenav()"
+          ></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SideNav -->
+    <aside
+      class="sidenav bg-[#ff6600] w-full fixed top-18 left-0 shadow p-5 text-white font-medium text-[19px] z-50 md:hidden hidden"
+    >
+      <div class="p-4">
+        <ul>
+          <li>
+            <a href="">About Us</a>
+          </li>
+
+          <li class="my-8">
+            <a href="">Services</a>
+          </li>
+
+          <li>
+            <a href="">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Cotent -->
+    <main>
+      <!-- Hero Section -->
+      <section>
+        <div class="px-4 mx-auto max-w-7xl py-24 lg:py-56">
+          <h4 class="mb-8 text-base font-medium md:text-xl">Our Services</h4>
+          <h1
+            class="mb-6 text-4xl font-bold tracking-tighter md:text-3xl lg:text-4xl"
+          >
+            Comprehensive Construction Solutions
+          </h1>
+          <h3 class="mt-4 text-base md:text-xl">
+            Built to Last. Crafted with Precision.
+          </h3>
+          <p class="mt-10">
+            At Smooth-Sail Construction Nigeria Limited, we bring ideas to life
+            with expert craftsmanship and engineering precision.
+          </p>
+        </div>
+      </section>
+
+      <!-- Filler -->
+      <section class="p-5">
+        <div>
+          <p class="text-[#ff6600]">
+            From concept to completion, we offer a comprehensive suite of
+            construction and fabrication services tailored to meet the needs of
+            residential, commercial, industrial, and governmental clients.
+          </p>
+        </div>
+      </section>
+
+      <!-- Our Services -->
+      <!-- <section class="p-5">
+
+        <div>
+          <h2>Explore Our Services</h2>
+        </div>
+
+        <div>
+            <div>
+                <p></p>
+                <span></span>
+            </div>
+        </div>
+      </section> -->
+
+      <!--  Safety & Quality  -->
+      <section class="p-5">
+        <div>
+          <p>Safety & Quality</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-5 items-center">
+          <div>
+            <img
+              src="images/michael-bader-eyq7H7gO0EY-unsplash.jpg"
+              alt=""
+              class="w-100 mx-auto rounded-md"
+            />
+          </div>
+
+          <div>
+            <h3>We Don’t Compromise on Standards.</h3>
+            <p>
+              Safety and quality are not just compliance check boxes they’re at
+              the core of our company culture.
+            </p>
+            <p>
+              We take every measure to protect our workers, clients, and
+              environment while delivering projects that exceed expectations.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div>
+            <h3>Our Safety Commitments</h3>
+            <div>
+              <li>Regular staff safety training and toolbox talks</li>
+              <li>Use of certified personal protective equipment (PPE)</li>
+              <li>Strict adherence to OSHA and national safety guidelines</li>
+              <li>Incident reporting and risk assessment protocols</li>
+              <li>On-site safety supervision and daily checks</li>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="images/tecnic-bioprocess-solutions-xWUNZVW5JOg-unsplash.jpg"
+              alt=""
+              class="w-100 mx-auto rounded-md"
+            />
+          </div>
+
+          <div>
+            <h3>Our Quality Promise</h3>
+            <div>
+              <li>Use of certified, high-grade materials</li>
+              <li>Detailed inspections at every stage of construction</li>
+              <li>
+                Workmanship guaranteed by experienced engineers and certified
+                technicians
+              </li>
+              <li>In-house QA/QC processes for consistent excellence</li>
+              <li>Client walkthroughs and feedback loops before handover</li>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Portfolio -->
+      <section class="p-5 text-white bg-[#003366]">
+        <div>
+          <h2 class="text-[#002b59]">Our Portfolio</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-5">
+          <div>
+            <p>Proven Results. Trusted Projects.</p>
+          </div>
+
+          <div>
+            Every project tells a story, and we’re proud of each one. Our
+            portfolio spans residential buildings, commercial centers,
+            industrial plants, and specialty metal fabrication projects. We
+            don’t just build structures; we build confidence.
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div>
+            <img
+              src="images/troy-mortier-eKY6_9W_iqY-unsplash.jpg"
+              alt=""
+              class="rounded-md"
+            />
+            <p>GreenVolt Energy Park</p>
+          </div>
+
+          <div>
+            <img
+              src="images/michael-bader-eyq7H7gO0EY-unsplash.jpg"
+              alt=""
+              class="rounded-md"
+            />
+            <p>Structural Steel Fabrication & Erection</p>
+          </div>
+
+          <div>
+            <img
+              src="images/josh-beech-tXJhAFVOHVk-unsplash.jpg"
+              alt=""
+              class="rounded-md"
+            />
+            <p>Metal Fabrication & Welding</p>
+          </div>
+        </div>
+
+        <div class="mt-10 w-fit mx-auto">
+          <a href="contact.html">
+            <button
+              class="cursor-pointer bg-[#ff6600] px-6 py-3 rounded-md font-medium hover:bg-[#003366] hover:font-medium hover:text-[#ff6600] transition duration-300 ease-in-out"
+            >
+              Work With Us
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#deeeff]">
+      <section class="p-5">
+        <div class="grid md:grid-cols-2">
+          <div>
+            <img src="logos/Layer_1-300x86.png" alt="" />
+          </div>
+
+          <div>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75432.1461996814!2d3.334240924141263!3d6.469146634994179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2suk!4v1765572550436!5m2!1sen!2suk"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="rounded-md md:w-100 md:h-75 lg:w-150 lg:h-75 mt-8 mx-auto"
+              ></iframe>
+            </div>
+
+            <div class="flex items-center space-x-2 mt-5 w-fit mx-auto">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>
+                D-244 Ikota Shopping Complex, V.G.C Lekki Lagos State Nigeria
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-phone"></i>
+              <span>+234(0) 806 4831 859</span>
+            </div>
+
+            <div class="flex items-center space-x-2 my-5">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>+234(0) 903 4691 468</span>
+            </div>
+
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Info@smoothsailconstruction.com</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div>
+        <hr />
+      </div>
+
+      <section class="p-5">
+        <div>
+          <p>© Smooth Sail Construction.</p>
+          <p>Developed by <a href=""></a>Pere-ere</p>
+        </div>
+
+        <div>
+          <h6>Company</h6>
+          <div>
+            <a href="">About</a>
+            <a href="">Services</a>
+          </div>
+        </div>
+
+        <div>
+          <h6>Support</h6>
+          <div class="grid">
+            <a href="">Contact Us</a>
+            <a href="">FAQs</a>
+            <a href="">Facebook</a>
+            <a href="">LinkedIn</a>
+          </div>
+        </div>
+
+        <div>
+          <h6>Newsletter</h6>
+          <div>
+            <form action="">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email Address Here..."
+                class="w-full bg-white px-5 py-3 rounded-lg border border-gray-300"
+              />
+
+              <div class="mt-5">
+                <button
+                  class="bg-[#ff6600] cursor-pointer w-70 py-3 text-white font-medium rounded-lg"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Back to the top Button -->
+    <div
+      id="backToTopBtn"
+      title="Go to top"
+      class="fixed bottom-5 right-6 z-50"
+    >
+      <button
+        class="bg-[#ff6600] p-3 rounded-full animate-pulse w-14 h-14 cursor-pointer"
+      >
+        <i class="fa-solid fa-arrow-up text-[#003366]"></i>
+      </button>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="services.js"></script>
+  </body>
 </html>
