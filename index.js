@@ -44,11 +44,18 @@ function topFunction() {
     behavior: 'smooth'
   });
 }
+ 
+// Homepage counter
+let count = 0;
+let max = 24; 
 
+let counter = document.getElementById("counter"); 
 
-// const counter = new CountUp('counter', 24); 
-// if (!counter.error) {
-//   counter.start(); 
-// } else {
-//   console.error(counter.error); 
-// } 
+let interval = setInterval(function () {
+  count++;
+  counter.textContent = count; 
+
+  if (count === max) {
+    clearInterval(interval); 
+  }
+}, 100); 
