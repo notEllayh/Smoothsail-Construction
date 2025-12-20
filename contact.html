@@ -58,12 +58,12 @@
 
         <div class="md:hidden">
           <i
-            class="fa-solid fa-bars"
+            class="fa-solid fa-bars text-[#003366]"
             id="sidenavOpen"
             onclick="showSidenav()"
           ></i>
           <i
-            class="fa-solid fa-xmark"
+            class="fa-solid fa-xmark text-[#003366]"
             id="sidenavClose"
             onclick="hideSidenav()"
           ></i>
@@ -143,39 +143,96 @@
               <img src="" alt="" />
             </div>
 
-            <div>
+            <div class="bg-[#f5f5f5] p-10 rounded-[30px] w-fit">
               <!-- Form -->
               <div>
-                <h3>Request a Site Visit or Consultation</h3>
-                <p>
+                <h3 class="">Request a Site Visit or Consultation</h3>
+                <p class="my-8">
                   Fill out the form below with your most available phone phone
                   and our customer service representative will call you shortly.
                 </p>
-                <form action="">
-                  <input
-                    type="text"
-                    name="first_name"
-                    placeholder="First Name"
-                  />
-                  <input type="text" name="last_name" placeholder="Last Name" />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email Address"
-                  />
-                  <input
-                    type="text"
-                    name="business_name"
-                    placeholder="Business / Organization Name"
-                  />
+                <form action="" class="needs-validation">
+                  <div class="grid grid-cols-1 md:gap-6 md:grid-cols-2">
+                    <div>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="first_name"
+                        placeholder="First Name"
+                        required
+                        class="bg-white px-6 py-2 w-full rounded-lg border border-gray-300"
+                      />
+                      <span class="error-message hidden"
+                        >Please enter your name.</span
+                      >
+                      <span class="success-message hidden">Looks good!</span>
+                    </div>
 
-                  <textarea
-                    name="message"
-                    id=""
-                    placeholder="Type your message"
-                  ></textarea>
+                    <div>
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="last_name"
+                        placeholder="Last Name"
+                        required
+                        class="bg-white px-6 py-2 rounded-lg w-full mt-5 md:mt-0 border border-gray-300"
+                      />
+                      <span class="error-message hidden"
+                        >Please enter your last name.</span
+                      >
+                      <span class="success-message hidden">Looks good!</span>
+                    </div>
+                  </div>
 
-                  <button>Submit</button>
+                  <div>
+                    <input
+                      type="email"
+                      id="userEmail"
+                      name="email"
+                      placeholder="Your Email Address"
+                      required
+                      class="bg-white px-6 py-2 rounded-lg border border-gray-300 w-full my-5"
+                    />
+                    <span class="error-message hidden"
+                      >Please enter a valid email</span
+                    >
+                    <span class="success-message hidden">Looks good!</span>
+                    <br />
+                  </div>
+
+                  <div>
+                    <input
+                      type="text"
+                      id="businessName"
+                      name="business_name"
+                      placeholder="Business / Organization Name"
+                      class="bg-white px-6 py-2 rounded-lg border border-gray-300 w-full"
+                    />
+                    <br />
+                  </div>
+
+                  <div>
+                    <textarea
+                      name="message"
+                      id="userMessage"
+                      placeholder="Type your message"
+                      class="bg-white px-6 py-2 rounded-lg border border-gray-300 my-5 w-full h-30"
+                      required
+                    ></textarea>
+                    <span class="error-message hidden"
+                      >Please write few words</span
+                    >
+                    <span class="success-message hidden">Looks good!</span>
+                    <br />
+                  </div>
+
+                  <button
+                    type="submit"
+                    name="submitButton"
+                    class="bg-[#ff6600] cursor-pointer px-6 py-2 rounded-lg w-full text-white font-medium md:text-[18px] hover:bg-[#fa8333] transition duration-300"
+                  >
+                    Submit
+                  </button>
                 </form>
               </div>
             </div>
@@ -521,7 +578,9 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- COLUMN 1 -->
             <div>
-              <p class="font-medium">© Smooth Sail Construction</p>
+              <p class="font-medium text-[#003366]">
+                © Smooth Sail Construction
+              </p>
               <p class="mt-2">
                 Developed by <a href="#" class="underline">Pere-ere</a>
               </p>
