@@ -1,5 +1,4 @@
 AOS.init();
-//  import { CountUp } from './js/countUp.min.js'; 
 
 const sidenavOpen = document.getElementById('sidenavOpen'); 
 const sidenavClose = document.getElementById('sidenavClose');
