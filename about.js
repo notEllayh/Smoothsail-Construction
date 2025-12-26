@@ -3,6 +3,7 @@ AOS.init();
 const sidenavOpen = document.getElementById('sidenavOpen'); 
 const sidenavClose = document.getElementById('sidenavClose');
 const sidenav = document.getElementById('sidenav');
+const mobileMenu = document.getElementById('mobile-menu'); 
 
 // Side navigation
 sidenavOpen.style.display = 'block';
@@ -14,6 +15,11 @@ function showSidenav(){
    sidenavClose.style.display = 'block';
   sidenav.style.display = 'flex' 
 }
+
+// sidenavOpen.addEventListener("click", () => {
+//   mobileMenu.classList.toggle("-translate-y-full"); 
+//   mobileMenu.classList.toggle("translate-y-0"); 
+// }); 
 
 function hideSidenav(){
   const sidenav = document.querySelector('.sidenav')
