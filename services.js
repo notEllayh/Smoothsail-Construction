@@ -46,7 +46,7 @@ function topFunction() {
 
 const answers = {
   srv1: {
-    Image: "https://unsplash.com/photos/high-rise-buildings-during-night-time-g9A2llpDObU", 
+    Image: "./images/troy-mortier-eKY6_9W_iqY-unsplash.jpg", 
     title: "General Construction", 
     text: "We handle all aspects of construction from foundations to finishes. Our general construction services cover residential homes, office complexes, warehouses, factories, and infrastructure projects. We ensure structural integrity, design alignment, and cost effective execution for both small scale and large scale developments.",
     buttontext: "Work with Us", 
