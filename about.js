@@ -16,11 +16,6 @@ function showSidenav(){
   sidenav.style.display = 'flex' 
 }
 
-// sidenavOpen.addEventListener("click", () => {
-//   mobileMenu.classList.toggle("-translate-y-full"); 
-//   mobileMenu.classList.toggle("translate-y-0"); 
-// }); 
-
 function hideSidenav(){
   const sidenav = document.querySelector('.sidenav')
    sidenavOpen.style.display = 'block'; 

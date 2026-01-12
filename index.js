@@ -1,27 +1,5 @@
 AOS.init();
 
-const sidenavOpen = document.getElementById('sidenavOpen'); 
-const sidenavClose = document.getElementById('sidenavClose');
-const sidenav = document.getElementById('sidenav');
-
-// Side navigation
-sidenavOpen.style.display = 'block';
-sidenavClose.style.display = 'none'; 
-
-function showSidenav(){
-  const sidenav = document.querySelector('.sidenav')
-   sidenavOpen.style.display = 'none'; 
-   sidenavClose.style.display = 'block';
-  sidenav.style.display = 'flex' 
-}
-
-function hideSidenav(){
-  const sidenav = document.querySelector('.sidenav')
-   sidenavOpen.style.display = 'block'; 
-  sidenavClose.style.display = 'none';
-  sidenav.style.display = 'none' 
-} 
-
 // Back to top button
 const mybutton = document.getElementById("backToTopBtn"); 
 

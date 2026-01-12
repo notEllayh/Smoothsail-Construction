@@ -21,9 +21,21 @@
       href="logos/cropped-Layer_1-32x32.webp"
       type="image/x-icon"
     />
+    <!-- Text Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+    </style>
+    <!-- Text Font End -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="overflow-x-hidden">
+
+  <body class="overflow-x-hidden font-sora">
     <!-- Navbar -->
     <header>
       <nav
@@ -689,7 +701,7 @@
             </div>
 
             <div
-              class="bg-[#ccd6e0] rounded-lg p-5 w-full max-w-sm mx-auto lg:h-60"
+              class="bg-[#ccd6e0] rounded-lg p-5 w-full max-w-sm mx-auto lg:mt-35 lg:h-60"
               data-aos="flip-right"
               data-aos-duration="1200"
             >
@@ -741,7 +753,7 @@
             </div>
 
             <div
-              class="bg-[#ccd6e0] rounded-lg p-5 w-full max-w-sm mx-auto lg:h-60"
+              class="bg-[#ccd6e0] rounded-lg p-5 w-full max-w-sm mx-auto lg:mt-35 lg:h-60"
               data-aos="flip-right"
               data-aos-duration="1200"
             >
@@ -811,17 +823,19 @@
 
               <div class="flex items-center gap-4 mt-5">
                 <i class="fa-solid fa-phone text-[#092d63]"></i>
-                <span>+234 (0) 806 4831 859</span>
+                <span class="text-[#666666]">+234 (0) 806 4831 859</span>
               </div>
 
               <div class="flex items-center gap-4">
                 <i class="fa-brands fa-whatsapp text-[#092d63]"></i>
-                <span>+234 (0) 903 4691 468</span>
+                <span class="text-[#666666]">+234 (0) 903 4691 468</span>
               </div>
 
               <div class="flex items-center gap-4">
                 <i class="fa-solid fa-envelope text-[#092d63]"></i>
-                <a href="#">info@smoothsailconstruction.com</a>
+                <a href="#" class="text-[#666666]"
+                  >info@smoothsailconstruction.com</a
+                >
               </div>
             </div>
 
@@ -840,7 +854,7 @@
 
               <div class="flex items-start gap-4 mt-4">
                 <i class="fa-solid fa-location-dot mt-1"></i>
-                <p>
+                <p class="text-[#666666]">
                   D-244 Ikota Shopping Complex, V.G.C Lekki Lagos
                   <span class="block">State Nigeria</span>
                 </p>
@@ -855,18 +869,16 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- COLUMN 1 -->
             <div>
-              <p class="font-medium text-[#003366]">
-                © Smooth Sail Construction
-              </p>
-              <p class="mt-2">
+              <p class="text-[#003366]">© Smooth Sail Construction</p>
+              <p class="mt-2 text-[#666666]">
                 Developed by <a href="#" class="text-[#c91625]">Pere-ere</a>
               </p>
             </div>
 
             <!-- COLUMN 2 -->
             <div>
-              <h3 class="font-semibold mb-3">Company</h3>
-              <ul class="space-y-2">
+              <h3 class="font-semibold mb-3 text-[#666666]">Company</h3>
+              <ul class="space-y-2 text-[#666666]">
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
               </ul>
@@ -874,8 +886,8 @@
 
             <!-- COLUMN 3 -->
             <div>
-              <h3 class="font-semibold mb-3">Support</h3>
-              <ul class="space-y-2">
+              <h3 class="font-semibold mb-3 text-[#666666]">Support</h3>
+              <ul class="space-y-2 text-[#666666]">
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="contact.html">FAQs</a></li>
                 <li><a href="#">Facebook</a></li>
@@ -885,7 +897,7 @@
 
             <!-- COLUMN 4 -->
             <div>
-              <h3 class="font-semibold my-5">Newsletter</h3>
+              <h3 class="font-semibold my-5 text-[#666666]">Newsletter</h3>
 
               <input
                 type="email"
@@ -917,6 +929,29 @@
       </button>
     </div>
 
+    <script>
+      const sidenavOpen = document.getElementById("sidenavOpen");
+      const sidenavClose = document.getElementById("sidenavClose");
+      const sidenav = document.getElementById("sidenav");
+
+      // Side navigation
+      sidenavOpen.style.display = "block";
+      sidenavClose.style.display = "none";
+
+      function showSidenav() {
+        const sidenav = document.querySelector(".sidenav");
+        sidenavOpen.style.display = "none";
+        sidenavClose.style.display = "block";
+        sidenav.style.display = "flex";
+      }
+
+      function hideSidenav() {
+        const sidenav = document.querySelector(".sidenav");
+        sidenavOpen.style.display = "block";
+        sidenavClose.style.display = "none";
+        sidenav.style.display = "none";
+      }
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="index.js" type="module"></script>
   </body>

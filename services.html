@@ -29,6 +29,17 @@
       href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- Text Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+    </style>
+    <!-- Text Font End -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
@@ -126,90 +137,8 @@
         </div>
       </section>
 
-      <!-- Our Services -->
-      <section class="px-6 mt-10">
-        <div class="max-w-7xl mx-auto">
-          <div>
-            <h2>Explore Our Services</h2>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Left for Services -->
-            <div id="faq-questions" class="space-y-3">
-              <!-- Services 1 -->
-              <button
-                data-id="srv1"
-                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] md:text-[20px] md:hover:bg-[#666666] md:hover:text-white"
-                onclick="showAnswer('q1')"
-              >
-                General Construction
-              </button>
-
-              <!-- Services 2 -->
-              <button
-                data-id="srv2"
-                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] md:text-[20px] md:hover:bg-[#666666] md:hover:text-white"
-                onclick="showAnswer('q2')"
-              >
-                Structural Steel Fabrication & Erection
-              </button>
-
-              <!-- Services 3 -->
-              <button
-                data-id="srv3"
-                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] md:text-[20px] md:hover:bg-[#666666] md:hover:text-white"
-                onclick="showAnswer('q3')"
-              >
-                Project Management & Consulting
-              </button>
-
-              <!-- Services 4 -->
-              <button
-                data-id="srv4"
-                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] md:text-[20px] md:hover:bg-[#666666] md:hover:text-white"
-                onclick="showAnswer('q4')"
-              >
-                Custom Metal Work
-              </button>
-
-              <!-- Services 5 -->
-              <button
-                data-id="srv5"
-                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] md:text-[20px] md:hover:bg-[#666666] md:hover:text-white"
-                onclick="showAnswer('q5')"
-              >
-                Equipment Installation & Maintenance
-              </button>
-
-              <!-- Services 6 -->
-              <button
-                data-id="srv6"
-                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] md:text-[20px] md:hover:bg-[#666666] md:hover:text-white"
-                onclick="showAnswer('q6')"
-              >
-                Industrial Piping & Plumbing
-              </button>
-
-              <!-- Services 7 -->
-              <button
-                data-id="srv7"
-                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] md:text-[20px] md:hover:bg-[#666666] md:hover:text-white"
-                onclick="showAnswer('q7')"
-              >
-                Electrical & Mechanical Services
-              </button>
-            </div>
-
-            <!-- Right - Answer card -->
-            <div id="faq-answer">
-              <p class="text-gray-500">Select a service to see the details.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Filler -->
-      <section class="px-6">
+      <section class="px-6 my-10">
         <div class="max-w-7xl mx-auto">
           <div data-aos="fade-up" data-aos-duration="1200">
             <p class="text-[#ff6600] text-center font-bold text-[18px]">
@@ -225,8 +154,94 @@
         </div>
       </section>
 
+      <!-- Our Services -->
+      <section class="px-6 my-10">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center">
+            <h2
+              class="text-[#003366] font-bold my-10 text-[20px] md:text-[33px]"
+            >
+              Explore Our Services
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Left for Services -->
+            <div id="faq-questions" class="space-y-3 order-2 md:order-1">
+              <!-- Services 1 -->
+              <button
+                data-id="srv1"
+                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] text-[#666666] md:text-[19px] md:hover:bg-[#666666] md:hover:text-white"
+                onclick="showAnswer('q1')"
+              >
+                General Construction
+              </button>
+
+              <!-- Services 2 -->
+              <button
+                data-id="srv2"
+                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] text-[#666666] md:text-[19px] md:hover:bg-[#666666] md:hover:text-white"
+                onclick="showAnswer('q2')"
+              >
+                Structural Steel Fabrication & Erection
+              </button>
+
+              <!-- Services 3 -->
+              <button
+                data-id="srv3"
+                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] text-[#666666] md:text-[19px] md:hover:bg-[#666666] md:hover:text-white"
+                onclick="showAnswer('q3')"
+              >
+                Project Management & Consulting
+              </button>
+
+              <!-- Services 4 -->
+              <button
+                data-id="srv4"
+                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] text-[#666666] md:text-[19px] md:hover:bg-[#666666] md:hover:text-white"
+                onclick="showAnswer('q4')"
+              >
+                Custom Metal Work
+              </button>
+
+              <!-- Services 5 -->
+              <button
+                data-id="srv5"
+                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] text-[#666666] md:text-[19px] md:hover:bg-[#666666] md:hover:text-white"
+                onclick="showAnswer('q5')"
+              >
+                Equipment Installation & Maintenance
+              </button>
+
+              <!-- Services 6 -->
+              <button
+                data-id="srv6"
+                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] text-[#666666] md:text-[19px] md:hover:bg-[#666666] md:hover:text-white"
+                onclick="showAnswer('q6')"
+              >
+                Industrial Piping & Plumbing
+              </button>
+
+              <!-- Services 7 -->
+              <button
+                data-id="srv7"
+                class="faq-btn cursor-pointer w-full text-left p-3 text-[17px] text-[#666666] md:text-[19px] md:hover:bg-[#666666] md:hover:text-white"
+                onclick="showAnswer('q7')"
+              >
+                Electrical & Mechanical Services
+              </button>
+            </div>
+
+            <!-- Right - Answer card -->
+            <div id="faq-answer" class="order-1 md:order-2">
+              <p class="text-[#ff670f]">Select a service to see the details.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!--  Safety & Quality  -->
-      <section class="px-6 mt-10">
+      <section class="px-6 mt-20">
         <div class="max-w-7xl mx-auto">
           <div data-aos="fade-up" data-aos-duration="1200">
             <p class="text-[#154473] text-[22px] md:text-2xl">
@@ -308,7 +323,7 @@
       </section>
 
       <!-- Our Portfolio -->
-      <section class="px-6 text-white bg-[#003366] mt-10">
+      <section class="px-6 text-white bg-[#003366] mt-15">
         <div class="max-w-7xl mx-auto">
           <div class="flex justify-end">
             <h2 class="text-[#002b59] font-bold text-[24px] md:text-6xl">
@@ -324,7 +339,7 @@
             </div>
 
             <div class="mt-10">
-              <p class="font-medium md:text-[18px]">
+              <p class="font-medium md:text-[19px]">
                 Every project tells a story, and we’re proud of each one. Our
                 portfolio spans residential buildings, commercial centers,
                 industrial plants, and specialty metal fabrication projects. We
@@ -338,31 +353,37 @@
               <img
                 src="images/troy-mortier-eKY6_9W_iqY-unsplash.jpg"
                 alt=""
-                class="rounded-md w-90 h-auto mx-auto"
+                class="rounded-t-md w-90 h-auto mx-auto"
               />
-              <p class="font-bold text-[21px] md:mt-5 w-fit mx-auto">
+              <p
+                class="font-bold text-[18px] md:text-[21px] mt-2 md:mt-5 md:w-90 md:h-auto md:mx-auto"
+              >
                 GreenVolt Energy Park
               </p>
             </div>
 
-            <div data-aos="zoom-in" data-aos-duration="1200">
+            <div data-aos="zoom-in" data-aos-duration="1200" class="lg:mt-12">
               <img
                 src="images/michael-bader-eyq7H7gO0EY-unsplash.jpg"
                 alt=""
-                class="rounded-md w-90 h-auto mx-auto"
+                class="rounded-t-md w-90 h-auto mx-auto"
               />
-              <p class="font-bold text-[21px] md:mt-5 w-fit mx-auto">
+              <p
+                class="font-bold text-[18px] md:text-[21px] mt-2 md:mt-5 md:w-90 md:h-auto md:mx-auto"
+              >
                 Structural Steel Fabrication & Erection
               </p>
             </div>
 
-            <div data-aos="zoom-in" data-aos-duration="1200">
+            <div data-aos="zoom-in" data-aos-duration="1200" class="lg:mt-24">
               <img
                 src="images/josh-beech-tXJhAFVOHVk-unsplash.jpg"
                 alt=""
-                class="rounded-md w-90 h-auto mx-auto"
+                class="rounded-t-md w-90 h-auto mx-auto"
               />
-              <p class="font-bold text-[21px] md:mt-5 w-fit mx-auto">
+              <p
+                class="font-bold text-[18px] md:text-[21px] mt-2 md:mt-5 md:w-90 md:h-auto md:mx-auto"
+              >
                 Metal Fabrication & Welding
               </p>
             </div>
@@ -393,17 +414,19 @@
 
               <div class="flex items-center gap-4 mt-5">
                 <i class="fa-solid fa-phone text-[#092d63]"></i>
-                <span>+234 (0) 806 4831 859</span>
+                <span class="text-[#666666]">+234 (0) 806 4831 859</span>
               </div>
 
               <div class="flex items-center gap-4">
                 <i class="fa-brands fa-whatsapp text-[#092d63]"></i>
-                <span>+234 (0) 903 4691 468</span>
+                <span class="text-[#666666]">+234 (0) 903 4691 468</span>
               </div>
 
               <div class="flex items-center gap-4">
                 <i class="fa-solid fa-envelope text-[#092d63]"></i>
-                <a href="#">info@smoothsailconstruction.com</a>
+                <a href="#" class="text-[#666666]"
+                  >info@smoothsailconstruction.com</a
+                >
               </div>
             </div>
 
@@ -422,7 +445,7 @@
 
               <div class="flex items-start gap-4 mt-4">
                 <i class="fa-solid fa-location-dot mt-1"></i>
-                <p>
+                <p class="text-[#666666]">
                   D-244 Ikota Shopping Complex, V.G.C Lekki Lagos
                   <span class="block">State Nigeria</span>
                 </p>
@@ -437,18 +460,16 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- COLUMN 1 -->
             <div>
-              <p class="font-medium text-[#003366]">
-                © Smooth Sail Construction
-              </p>
-              <p class="mt-2">
+              <p class="text-[#003366]">© Smooth Sail Construction</p>
+              <p class="mt-2 text-[#666666]">
                 Developed by <a href="#" class="text-[#c91625]">Pere-ere</a>
               </p>
             </div>
 
             <!-- COLUMN 2 -->
             <div>
-              <h3 class="font-semibold mb-3">Company</h3>
-              <ul class="space-y-2">
+              <h3 class="font-semibold mb-3 text-[#666666]">Company</h3>
+              <ul class="space-y-2 text-[#666666]">
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
               </ul>
@@ -456,8 +477,8 @@
 
             <!-- COLUMN 3 -->
             <div>
-              <h3 class="font-semibold mb-3">Support</h3>
-              <ul class="space-y-2">
+              <h3 class="font-semibold mb-3 text-[#666666]">Support</h3>
+              <ul class="space-y-2 text-[#666666]">
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="contact.html">FAQs</a></li>
                 <li><a href="#">Facebook</a></li>
@@ -467,7 +488,7 @@
 
             <!-- COLUMN 4 -->
             <div>
-              <h3 class="font-semibold my-5">Newsletter</h3>
+              <h3 class="font-semibold my-5 text-[#666666]">Newsletter</h3>
 
               <input
                 type="email"
