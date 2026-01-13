@@ -74,12 +74,12 @@
 
         <div class="lg:hidden">
           <i
-            class="fa-solid fa-bars text-[#003366] md:text-2xl"
+            class="fa-solid fa-bars text-[#003366] text-2xl md:text-3xl"
             id="sidenavOpen"
             onclick="showSidenav()"
           ></i>
           <i
-            class="fa-solid fa-xmark text-[#003366] md:text-2xl"
+            class="fa-solid fa-xmark text-[#003366] text-2xl md:text-3xl"
             id="sidenavClose"
             onclick="hideSidenav()"
           ></i>
@@ -696,6 +696,65 @@
       </button>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="contact.js"></script>
+    <script>
+      AOS.init();
+
+      const sidenavOpen = document.getElementById("sidenavOpen");
+      const sidenavClose = document.getElementById("sidenavClose");
+      const sidenav = document.getElementById("sidenav");
+
+      // Side navigation
+      sidenavOpen.style.display = "block";
+      sidenavClose.style.display = "none";
+
+      function showSidenav() {
+        const sidenav = document.querySelector(".sidenav");
+        sidenavOpen.style.display = "none";
+        sidenavClose.style.display = "block";
+        sidenav.style.display = "flex";
+      }
+
+      function hideSidenav() {
+        const sidenav = document.querySelector(".sidenav");
+        sidenavOpen.style.display = "block";
+        sidenavClose.style.display = "none";
+        sidenav.style.display = "none";
+      }
+
+      // Faqs
+      document.querySelectorAll(".faq-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const content = button.nextElementSibling;
+          content.classList.toggle("hidden");
+        });
+      });
+
+      // Back to top button
+      const mybutton = document.getElementById("backToTopBtn");
+
+      window.onscroll = function () {
+        scrollFunction;
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      mybutton.addEventListener("click", topFunction);
+
+      function topFunction() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
   </body>
 </html>

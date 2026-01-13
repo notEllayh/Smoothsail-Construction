@@ -74,12 +74,12 @@
 
         <div class="lg:hidden">
           <i
-            class="fa-solid fa-bars text-[#003366] md:text-2xl"
+            class="fa-solid fa-bars text-[#003366] text-2xl md:text-3xl"
             id="sidenavOpen"
             onclick="showSidenav()"
           ></i>
           <i
-            class="fa-solid fa-xmark text-[#003366] md:text-2xl"
+            class="fa-solid fa-xmark text-[#003366] text-2xl md:text-3xl"
             id="sidenavClose"
             onclick="hideSidenav()"
           ></i>
@@ -116,12 +116,12 @@
       >
         <div class="px-4 mx-auto max-w-7xl py-24 lg:py-56">
           <h4
-            class="mb-8 text-white text-base font-bold text-[21px] md:text-[22px]"
+            class="mb-8 text-white text-base font-medium text-[18px] md:text-[22px]"
           >
             Our Services
           </h4>
           <h1
-            class="mb-6 text-white text-3xl font-bold tracking-tighter md:text-3xl lg:text-4xl"
+            class="mb-6 text-white text-3xl font-bold tracking-tighter md:text-3xl lg:text-5xl"
           >
             Comprehensive Construction Solutions
           </h1>
@@ -130,7 +130,7 @@
           >
             Built to Last. Crafted with Precision.
           </h3>
-          <p class="mt-10 text-white text-[20px]">
+          <p class="mt-10 md:w-200 text-white text-[17px] md:text-[20px]">
             At Smooth-Sail Construction Nigeria Limited, we bring ideas to life
             with expert craftsmanship and engineering precision.
           </p>
@@ -138,14 +138,14 @@
       </section>
 
       <!-- Filler -->
-      <section class="px-6 my-10">
+      <section class="px-6 my-15">
         <div class="max-w-7xl mx-auto">
           <div data-aos="fade-up" data-aos-duration="1200">
             <p class="text-[#ff6600] text-center font-bold text-[18px]">
               From concept to completion, we offer a comprehensive suite of
               construction and fabrication services tailored to meet the needs
               of
-              <span class="block"
+              <span class="md:block"
                 >residential, commercial, industrial, and governmental
                 clients.</span
               >
@@ -234,7 +234,9 @@
 
             <!-- Right - Answer card -->
             <div id="faq-answer" class="order-1 md:order-2">
-              <p class="text-[#ff670f]">Select a service to see the details.</p>
+              <p class="text-[#ff670f] text-center">
+                Select a service to see the details.
+              </p>
             </div>
           </div>
         </div>
@@ -264,15 +266,19 @@
               data-aos-duration="1200"
             >
               <h3
-                class="text-[#666666] font-semibold text-[18px] md:text-[22px]"
+                class="text-[#666666] font-semibold tracking-tight text-[18px] md:text-[22px]"
               >
                 We Don’t Compromise on Standards.
               </h3>
-              <p class="my-8 text-[#666666] font-semibold md:text-[18px]">
+              <p
+                class="my-8 text-[#666666] tracking-tight text-[16px] font-semibold md:text-[18px]"
+              >
                 Safety and quality are not just compliance check boxes they’re
                 at the core of our company culture.
               </p>
-              <p class="text-[#666666] md:text-[18px]">
+              <p
+                class="text-[#666666] tracking-tight text-[15px] md:text-[18px]"
+              >
                 We take every measure to protect our workers, clients, and
                 environment while delivering projects that exceed expectations.
               </p>
@@ -286,7 +292,9 @@
               <h3 class="text-[#666666] font-bold my-8 text-[20px]">
                 Our Safety Commitments
               </h3>
-              <div class="space-y-6 text-[18px] text-[#666666] p-4">
+              <div
+                class="space-y-6 text-[16px] md:text-[18px] text-[#666666] p-4"
+              >
                 <li>Regular staff safety training and toolbox talks</li>
                 <li>Use of certified personal protective equipment (PPE)</li>
                 <li>Strict adherence to OSHA and national safety guidelines</li>
@@ -307,7 +315,9 @@
               <h3 class="text-[#666666] font-bold my-8 text-[20px]">
                 Our Quality Promise
               </h3>
-              <div class="space-y-6 text-[18px] text-[#666666] p-4">
+              <div
+                class="space-y-6 text-[16px] md:text-[18px] text-[#666666] p-4"
+              >
                 <li>Use of certified, high-grade materials</li>
                 <li>Detailed inspections at every stage of construction</li>
                 <li>
@@ -520,6 +530,58 @@
       </button>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      const sidenavOpen = document.getElementById("sidenavOpen");
+      const sidenavClose = document.getElementById("sidenavClose");
+      const sidenav = document.getElementById("sidenav");
+
+      // Side navigation
+      sidenavOpen.style.display = "block";
+      sidenavClose.style.display = "none";
+
+      function showSidenav() {
+        const sidenav = document.querySelector(".sidenav");
+        sidenavOpen.style.display = "none";
+        sidenavClose.style.display = "block";
+        sidenav.style.display = "flex";
+      }
+
+      function hideSidenav() {
+        const sidenav = document.querySelector(".sidenav");
+        sidenavOpen.style.display = "block";
+        sidenavClose.style.display = "none";
+        sidenav.style.display = "none";
+      }
+
+      // Back to top button
+      const mybutton = document.getElementById("backToTopBtn");
+
+      window.onscroll = function () {
+        scrollFunction;
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      mybutton.addEventListener("click", topFunction);
+
+      function topFunction() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
     <script src="services.js"></script>
   </body>
 </html>
